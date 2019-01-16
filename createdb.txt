@@ -1,9 +1,13 @@
+##### CRAETE DATABASE
 
 sudo -i -u postgres
 
 psql
 
 CREATE DATABASE dbname;
+
+
+##### IF NOT EXIST AN CREATE USER
 
 CREATE USER username;
 
