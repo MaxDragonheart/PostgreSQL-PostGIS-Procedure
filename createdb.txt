@@ -1,0 +1,12 @@
+
+sudo -i -u postgres
+
+psql
+
+CREATE DATABASE dbname;
+
+CREATE USER username;
+
+ALTER ROLE username WITH CREATEDB;
+
+ALTER USER username WITH ENCRYPTED PASSWORD 'password';
