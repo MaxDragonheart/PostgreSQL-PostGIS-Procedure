@@ -18,7 +18,7 @@ $ ALTER USER testuser WITH CREATEROLE;
 $ \du                                           --> the rules of testuser are changed
 
 
-###Create PostGIS extensions (form here: https://postgis.net/install/ )
+###Create PostGIS extensions (from here: https://postgis.net/install/ )
 
 CREATE EXTENSION postgis;                       --> Enable PostGIS (includes raster)
 
