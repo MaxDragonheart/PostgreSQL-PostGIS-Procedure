@@ -1,0 +1,34 @@
+Procedure tested on UBUNTU 18.04
+
+
+###Installation
+
+$ sudo apt-get update
+$ sudo apt-get install postgis
+
+
+###Change User Role (Optional)
+My user is testeruser from "INSTALL PostgreSQL on Ubuntu"
+
+$ sudo -i -u postgres
+$ psql
+$ \du                                           --> appear the list of users and their roles
+$ ALTER USER testeruser WITH SUPERUSER;
+$ ALTER USER testeruser WITH CREATEROLE;
+$ \du                                           --> the rules of testeruser are changed
+
+
+###Create PostGIS extensions (form here: https://postgis.net/install/ )
+
+CREATE EXTENSION postgis;                       --> Enable PostGIS (includes raster)
+
+
+###Additional exstensions
+If necessary, based on your project
+
+CREATE EXTENSION postgis_topology;              --> Enable Topology
+CREATE EXTENSION postgis_sfcgal;                --> Enable PostGIS Advanced 3D and other geoprocessing algorithms sfcgal not available with all distributions
+CREATE EXTENSION fuzzystrmatch;                 --> fuzzy matching needed for Tiger
+CREATE EXTENSION address_standardizer;          --> rule based standardizer
+CREATE EXTENSION address_standardizer_data_us;  --> example rule data set
+CREATE EXTENSION postgis_tiger_geocoder;        --> Enable US Tiger Geocoder
