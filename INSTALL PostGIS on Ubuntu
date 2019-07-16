@@ -8,14 +8,14 @@ $ sudo apt-get install postgis
 
 
 ###Change User Role (Optional)
-My user is testeruser from "INSTALL PostgreSQL on Ubuntu"
+My user is testuser from "INSTALL PostgreSQL on Ubuntu"
 
 $ sudo -i -u postgres
 $ psql
 $ \du                                           --> appear the list of users and their roles
-$ ALTER USER testeruser WITH SUPERUSER;
-$ ALTER USER testeruser WITH CREATEROLE;
-$ \du                                           --> the rules of testeruser are changed
+$ ALTER USER testuser WITH SUPERUSER;
+$ ALTER USER testuser WITH CREATEROLE;
+$ \du                                           --> the rules of testuser are changed
 
 
 ###Create PostGIS extensions (form here: https://postgis.net/install/ )
