@@ -1,0 +1,9 @@
+Procedure tested on UBUNTU 18.04
+
+You must have PostgreSQL already installed
+
+###Installation
+
+$ sudo apt-get install pgadmin4 pgadmin4-apache2
+
+Choice login data for PgAdmin4 web interface
