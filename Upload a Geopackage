@@ -1,0 +1,1 @@
+ogr2ogr -f PostgreSQL PG:"dbname='databasename' host='addr' port='5432' user='x' password='y'" path_name\geopackage_name.gpkg
