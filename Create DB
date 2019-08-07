@@ -1,16 +1,14 @@
-##### CRAETE DATABASE
-
-sudo -i -u postgres
-
-psql
-
-CREATE DATABASE dbname;
+###Creation of TestDB
 
 
-##### IF NOT EXIST AN CREATE USER
+$ sudo -i -u postgres
 
-CREATE USER username;
+$ psql
 
-ALTER ROLE username WITH CREATEDB;
+$ CREATE DATABASE testdb;
 
-ALTER USER username WITH ENCRYPTED PASSWORD 'password';
+$ CREATE USER testuser;
+
+$ ALTER ROLE testuser WITH CREATEDB;
+
+$ ALTER USER testuser WITH ENCRYPTED PASSWORD 'test1234';
