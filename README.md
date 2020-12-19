@@ -3,16 +3,16 @@ Use PostgreSQL and PostGIS from command line. Tested on Ubuntu 20.04
 
 ##Install PostgreSQL
 
-$ sudo apt update
-$ sudo apt install postgresql 
+`sudo apt update`
+`sudo apt install postgresql`
 
 
 ###Verifying
 
-$ sudo su - postgres
-$ psql
-$ postgres-# \conninfo
-$ postgres-# \q
+`sudo su - postgres`
+`psql`
+`postgres-# \conninfo`
+`postgres-# \q`
 
 
 ###Creation of TestDB [OPTIONAL]
