@@ -1,5 +1,3 @@
-Procedure tested on UBUNTU 18.04
-
 ###Preconfiguration
 
 $ sudo apt install wget ca-certificates
