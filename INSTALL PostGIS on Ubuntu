@@ -3,19 +3,8 @@ Procedure tested on UBUNTU 18.04
 
 ###Installation
 
-$ sudo apt-get update
-$ sudo apt-get install postgis
-
-
-###Change User Role (Optional)
-My user is testuser from "INSTALL PostgreSQL on Ubuntu"
-
-$ sudo -i -u postgres
-$ psql
-$ \du                                           --> appear the list of users and their roles
-$ ALTER USER testuser WITH SUPERUSER;
-$ ALTER USER testuser WITH CREATEROLE;
-$ \du                                           --> the rules of testuser are changed
+$ sudo apt update
+$ sudo apt install postgis
 
 
 ###Create PostGIS extensions (from here: https://postgis.net/install/ )
@@ -23,7 +12,7 @@ $ \du                                           --> the rules of testuser are ch
 CREATE EXTENSION postgis;                       --> Enable PostGIS (includes raster)
 
 
-###Additional exstensions
+###Additional exstensions [OPTIONAL]
 If necessary, based on your project
 
 CREATE EXTENSION postgis_topology;              --> Enable Topology
