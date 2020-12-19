@@ -10,7 +10,7 @@ $ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -c
 ###Installation
 
 $ sudo apt-get update
-$ sudo apt-get install postgresql postgresql-contrib
+$ sudo apt-get install postgresql 
 
 
 ###Verifying
@@ -21,7 +21,7 @@ $ postgres-# \conninfo
 $ postgres-# \q
 
 
-###Creation of TestDB
+###Creation of TestDB [OPTIONAL]
 
 $ sudo -i -u postgres
 $ psql
