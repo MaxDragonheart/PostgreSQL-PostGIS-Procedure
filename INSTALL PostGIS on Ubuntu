@@ -1,13 +1,10 @@
-Procedure tested on UBUNTU 18.04
-
-
-###Installation
+#Installation
 
 $ sudo apt update
 $ sudo apt install postgis
 
 
-###Create PostGIS extensions (from here: https://postgis.net/install/ )
+##Create PostGIS extensions (from here: https://postgis.net/install/ )
 
 CREATE EXTENSION postgis;                       --> Enable PostGIS (includes raster)
 
